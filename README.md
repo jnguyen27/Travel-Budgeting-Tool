@@ -1,4 +1,4 @@
-# Travel-Budgeting-Tool
+# Django Project
 A personal project that will be implemented using Django and Scrapy or BeautifulSoup.
 
 ## Usage
