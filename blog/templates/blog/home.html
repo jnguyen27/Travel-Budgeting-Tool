@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <!-- looping through all posts and printing them out-->
+<!-- calls on base.html to shorten code for each html template
+(less repetitive code) -->
+{% extends "blog/base.html" %}
+{% block content %}
+<!-- unique code for the homepage -->
     {% for post in posts %}
-      <h1>{{ post.title }}</h1>
-      <p>By {{ post.author }} on {{ post.date_posted }}</p>
-      <p>{{ post.content }}</p>
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date_posted }}</p>
+        <p>{{ post.content }}</p>
     {% endfor %}
-  </body>
-</html>
+{% endblock content %}

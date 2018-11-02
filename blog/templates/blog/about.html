@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<!-- calls on base.html to shorten code for each html template
+(less repetitive code) -->
+{% extends "blog/base.html" %}
+{% block content %}
+<!-- unique code for the about page -->
     <h1>About Page!</h1>
-  </body>
-</html>
+{% endblock content %}
